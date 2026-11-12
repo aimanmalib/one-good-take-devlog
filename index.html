@@ -49,15 +49,15 @@ footer{color:var(--dim);font-size:.8rem;text-align:center;border-top:1px solid v
 <header class="card"><p class="kicker">A Glass Box dev log for the 2026 Epic AI MegaJam</p><h1>One Good Take: the Director&#x27;s Cut dev log</h1></header>
 <section class="lede"><p>One Good Take is a one-thumb editing puzzle game made in Unreal Engine 5.8 for the theme &quot;Director&#x27;s Cut&quot;.</p><p>Every line of code, every sprite and every sound in it is made by AI agents, working in small slices.</p><p>A server with no graphics card does the thinking; the entrant&#x27;s laptop does the building and testing.</p><p>This page is generated from the project&#x27;s own records after every finished slice. Every number on it is counted, not typed.</p><p>What was cut matters as much as what was kept, so the cutting room floor is part of the show.</p></section>
 <ul class="numbers">
-<li><b>14</b><span>slices finished</span></li>
-<li><b>33</b><span>commits</span></li>
-<li><b>16</b><span>ideas on the cutting room floor</span></li>
-<li><b>8</b><span>calls to the laptop</span><small>answered so far: 0</small></li>
-<li><b>6</b><span>hours since the cameras rolled</span></li>
+<li><b>15</b><span>slices finished</span></li>
+<li><b>36</b><span>commits</span></li>
+<li><b>17</b><span>ideas on the cutting room floor</span></li>
+<li><b>9</b><span>calls to the laptop</span><small>answered so far: 0</small></li>
+<li><b>7</b><span>hours since the cameras rolled</span></li>
 </ul>
 <section><div class="card"><h2>Call sheet</h2></div><table class="callsheet"><tbody>
 <tr><th scope=row>The director</th><td>the human entrant; their notes are quoted here only as written</td><td>0 notes so far</td></tr>
-<tr><th scope=row>The builder</th><td>a fresh AI agent session for each small slice</td><td>14 slices so far</td></tr>
+<tr><th scope=row>The builder</th><td>a fresh AI agent session for each small slice</td><td>15 slices so far</td></tr>
 <tr><th scope=row>The reviewer</th><td>a separate AI agent session that checks each slice</td><td>(TBD-reviewer-count)</td></tr>
 <tr><th scope=row>The stunt double</th><td>automated play-throughs that run every level</td><td>(TBD-autoplay-count)</td></tr>
 </tbody></table></section>
@@ -79,6 +79,8 @@ footer{color:var(--dim);font-size:.8rem;text-align:center;border-top:1px solid v
 <a class="frame" href="#shot-p8"><b>P8</b>done</a>
 <a class="frame" href="#shot-p9"><b>P9</b>done</a>
 <a class="frame" href="#shot-p14"><b>P14</b>done</a>
+<a class="frame cut" href="#cut-17-night-rooftop-set--third-backdrop"><b>&#9986;</b>cut</a>
+<a class="frame" href="#shot-p15"><b>P15</b>done</a>
 </nav></div>
 <div class="day"><h3>Day 2 &middot; Fri 13 Nov</h3>
 <p class="empty">Not shot yet.</p></div>
@@ -117,6 +119,8 @@ footer{color:var(--dim);font-size:.8rem;text-align:center;border-top:1px solid v
 <li id="shot-p8"><strong>P8</strong> &middot; done. Synthesize the first wave of audio from code: a honky-tonk ragtime piano at 150 BPM (one beat per game tick), win and fail stingers, scissors, projector, buzzer and scrub notes, all through an old projector speaker chain, each stem measured for loudness.<span class="meta">12 Nov 2026, 09:40 UTC &middot; commits: c13f40a, f7fb406, 0d387d1, 0bb85fd</span></li>
 <li id="shot-p9"><strong>P9</strong> &middot; done. Lay out the Unreal project as text only: project file, Game and Editor targets, a pure C++ copy of the cut rules, a scene loader, the ogt console commands, automation tests and the editor script that imports the generated art and audio, with the C++ rules checked against the Python solver on the host.<span class="meta">12 Nov 2026, 10:12 UTC &middot; commits: e67f1f2, 6365c43, be95cc2, 0153df9</span></li>
 <li id="shot-p14"><strong>P14</strong> &middot; done. Reels 2 and 3: eight new scenes with a continuity prop, trapdoors, falling objects, a rolling barrel and pie volleys, all passing check.py<span class="meta">12 Nov 2026, 11:17 UTC &middot; commits: 57feffd</span></li>
+<li id="cut-17-night-rooftop-set--third-backdrop" class="cutrow"><strong>Cut:</strong> Night rooftop set (third backdrop)<span class="meta">12 Nov 2026, 12:06 UTC &middot; cut by the builder</span></li>
+<li id="shot-p15"><strong>P15</strong> &middot; done. Second wave of art and audio for reels 2 and 3: hotel lobby set, new hazards and the cake prop, the script supervisor and her note cards, fail gags, two more rags, megaphone babble and the remaining effects<span class="meta">12 Nov 2026, 12:06 UTC &middot; commits: fe5e42b, 38bbfcd, b736331</span></li>
 </ol></section>
 <section><div class="card"><h2>The cutting room floor</h2></div><p class="intro">Ideas, features and work that were cut, who cut them, and why.</p><ul class="log">
 <li class="cutrow"><strong>Web build and the UE 5.9 MegaJam Preview</strong>. Decision K2: the preview had about a week of development and a shorter QA pass, the hosts said 5.9 is not required, and the biggest risk is not finishing.<span class="meta">cut by the spec</span></li>
@@ -135,6 +139,7 @@ footer{color:var(--dim);font-size:.8rem;text-align:center;border-top:1px solid v
 <li class="cutrow"><strong>Localisation</strong>. Decision K11: jam rules require English; the game, video and dev log are English only.<span class="meta">cut by the spec</span></li>
 <li class="cutrow"><strong>Any logo, including the engine&#x27;s</strong>. Out of scope in the spec from day one; the spec gives no separate reason.<span class="meta">cut by the spec</span></li>
 <li class="cutrow"><strong>DLSS and other vendor upscalers</strong>. Out of scope in the spec from day one; the spec gives no separate reason.<span class="meta">cut by the spec</span></li>
+<li class="cutrow"><strong>Night rooftop set (third backdrop)</strong>. Spec allows it only if time permits; the 12 scenes need two sets (studio street, hotel lobby), and the hours go to the laptop slices before the Friday gate.<span class="meta">cut by the builder</span></li>
 </ul></section>
 <section><div class="card"><h2>How a server with no graphics card builds an Unreal game</h2></div>
 <p>A queue on my server starts a fresh agent session for each small task, checks the result with tests, and a separate session reviews it.</p>
