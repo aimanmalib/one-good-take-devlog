@@ -49,15 +49,15 @@ footer{color:var(--dim);font-size:.8rem;text-align:center;border-top:1px solid v
 <header class="card"><p class="kicker">A Glass Box dev log for the 2026 Epic AI MegaJam</p><h1>One Good Take: the Director&#x27;s Cut dev log</h1></header>
 <section class="lede"><p>One Good Take is a one-thumb editing puzzle game made in Unreal Engine 5.8 for the theme &quot;Director&#x27;s Cut&quot;.</p><p>Every line of code, every sprite and every sound in it is made by AI agents, working in small slices.</p><p>A server with no graphics card does the thinking; the entrant&#x27;s laptop does the building and testing.</p><p>This page is generated from the project&#x27;s own records after every finished slice. Every number on it is counted, not typed.</p><p>What was cut matters as much as what was kept, so the cutting room floor is part of the show.</p></section>
 <ul class="numbers">
-<li><b>13</b><span>slices finished</span></li>
-<li><b>31</b><span>commits</span></li>
+<li><b>14</b><span>slices finished</span></li>
+<li><b>33</b><span>commits</span></li>
 <li><b>16</b><span>ideas on the cutting room floor</span></li>
-<li><b>7</b><span>calls to the laptop</span><small>answered so far: 0</small></li>
-<li><b>5</b><span>hours since the cameras rolled</span></li>
+<li><b>8</b><span>calls to the laptop</span><small>answered so far: 0</small></li>
+<li><b>6</b><span>hours since the cameras rolled</span></li>
 </ul>
 <section><div class="card"><h2>Call sheet</h2></div><table class="callsheet"><tbody>
 <tr><th scope=row>The director</th><td>the human entrant; their notes are quoted here only as written</td><td>0 notes so far</td></tr>
-<tr><th scope=row>The builder</th><td>a fresh AI agent session for each small slice</td><td>13 slices so far</td></tr>
+<tr><th scope=row>The builder</th><td>a fresh AI agent session for each small slice</td><td>14 slices so far</td></tr>
 <tr><th scope=row>The reviewer</th><td>a separate AI agent session that checks each slice</td><td>(TBD-reviewer-count)</td></tr>
 <tr><th scope=row>The stunt double</th><td>automated play-throughs that run every level</td><td>(TBD-autoplay-count)</td></tr>
 </tbody></table></section>
@@ -78,6 +78,7 @@ footer{color:var(--dim);font-size:.8rem;text-align:center;border-top:1px solid v
 <a class="frame" href="#shot-p7"><b>P7</b>done</a>
 <a class="frame" href="#shot-p8"><b>P8</b>done</a>
 <a class="frame" href="#shot-p9"><b>P9</b>done</a>
+<a class="frame" href="#shot-p14"><b>P14</b>done</a>
 </nav></div>
 <div class="day"><h3>Day 2 &middot; Fri 13 Nov</h3>
 <p class="empty">Not shot yet.</p></div>
@@ -102,19 +103,20 @@ footer{color:var(--dim);font-size:.8rem;text-align:center;border-top:1px solid v
 <li id="cut-7-third-party-licensed-text-to-speech-voic" class="cutrow"><strong>Cut:</strong> Third-party licensed text-to-speech voices<span class="meta">12 Nov 2026, 05:17 UTC &middot; cut by the spec</span></li>
 <li id="cut-8-fab--megascans--quixel-assets-and-ai-gen" class="cutrow"><strong>Cut:</strong> Fab, Megascans, Quixel assets and AI-generated 3D models<span class="meta">12 Nov 2026, 05:17 UTC &middot; cut by the spec</span></li>
 <li id="cut-9-ai-generated-music" class="cutrow"><strong>Cut:</strong> AI-generated music<span class="meta">12 Nov 2026, 05:17 UTC &middot; cut by the spec</span></li>
-<li id="shot-p0"><strong>P0</strong> &middot; done. Set up the repo: spec and plan installed, repo rules, first decision records, Python tool project, contest entry recorded.<span class="meta">12 Nov 2026, 05:20 UTC &middot; commits: ab7ac66, d8aeda2, 074fbef, 70f8409, eff410b</span></li>
-<li id="shot-p1"><strong>P1</strong> &middot; done. Write the laptop service: a closed list of endpoints behind a token, one job at a time, sync and read-only file access limited to C:\MegaJam.<span class="meta">12 Nov 2026, 05:33 UTC &middot; commits: b4305f0, ac73f75</span></li>
-<li id="shot-p2"><strong>P2</strong> &middot; done. Open the link: a reverse SSH tunnel key that can only forward two loopback ports, and a host client that logs every call.<span class="meta">12 Nov 2026, 05:46 UTC &middot; commits: 23cc44c, 5c0d22c, e9e4189</span></li>
-<li id="shot-p3a"><strong>P3a</strong> &middot; done. Build the laptop kit: five double-click batch files that install, start, pause and stop the service, plus a kit generator that keeps secrets out of the repo.<span class="meta">12 Nov 2026, 05:58 UTC &middot; commits: 697611b, 8e877a3</span></li>
-<li id="shot-p3b"><strong>P3b</strong> &middot; done. Write the owner&#x27;s one-page setup guide and hand the kit over.<span class="meta">12 Nov 2026, 06:07 UTC &middot; commits: 34e95c0, d83c9d0</span></li>
-<li id="shot-p4"><strong>P4</strong> &middot; done. Start collecting the dev log: a recorder for slices, cuts, bloopers and the director&#x27;s own notes, with the first five slices and the spec&#x27;s cuts filled in.<span class="meta">12 Nov 2026, 06:50 UTC &middot; commits: 1b87180, 993538d</span></li>
+<li id="shot-p0"><strong>P0</strong> &middot; done. Set up the repo: spec and plan installed, repo rules, first decision records, Python tool project, contest entry recorded.<span class="meta">12 Nov 2026, 05:20 UTC &middot; commits: ab7ac66, d8aeda2, 074fbef, 70f8409</span></li>
+<li id="shot-p1"><strong>P1</strong> &middot; done. Write the laptop service: a closed list of endpoints behind a token, one job at a time, sync and read-only file access limited to C:\MegaJam.<span class="meta">12 Nov 2026, 05:33 UTC &middot; commits: b4305f0</span></li>
+<li id="shot-p2"><strong>P2</strong> &middot; done. Open the link: a reverse SSH tunnel key that can only forward two loopback ports, and a host client that logs every call.<span class="meta">12 Nov 2026, 05:46 UTC &middot; commits: 23cc44c, e9e4189</span></li>
+<li id="shot-p3a"><strong>P3a</strong> &middot; done. Build the laptop kit: five double-click batch files that install, start, pause and stop the service, plus a kit generator that keeps secrets out of the repo.<span class="meta">12 Nov 2026, 05:58 UTC &middot; commits: 697611b</span></li>
+<li id="shot-p3b"><strong>P3b</strong> &middot; done. Write the owner&#x27;s one-page setup guide and hand the kit over.<span class="meta">12 Nov 2026, 06:07 UTC &middot; commits: 34e95c0</span></li>
+<li id="shot-p4"><strong>P4</strong> &middot; done. Start collecting the dev log: a recorder for slices, cuts, bloopers and the director&#x27;s own notes, with the first five slices and the spec&#x27;s cuts filled in.<span class="meta">12 Nov 2026, 06:50 UTC &middot; commits: 1b87180, 993538d, 826e29d</span></li>
 <li id="shot-p3c"><strong>P3c</strong> &middot; done. Write down the pre-submission amendment: fourteen review items and the four places where the build may differ from the spec, each with its reason and a way back.<span class="meta">12 Nov 2026, 06:58 UTC &middot; commits: 181a031</span></li>
-<li id="shot-p22a"><strong>P22a</strong> &middot; done. Publish a first-day dev log: a generated static page built only from the project&#x27;s records, exported to its own private repo after every finished slice.<span class="meta">12 Nov 2026, 07:16 UTC &middot; commits: 075d755</span></li>
+<li id="shot-p22a"><strong>P22a</strong> &middot; done. Publish a first-day dev log: a generated static page built only from the project&#x27;s records, exported to its own private repo after every finished slice.<span class="meta">12 Nov 2026, 07:16 UTC &middot; commits: 075d755, 3a2b79b</span></li>
 <li id="shot-p5"><strong>P5</strong> &middot; done. Write the scene model, the legal-cut rule and a breadth-first solver on the host, with one unit test per cut condition.<span class="meta">12 Nov 2026, 07:41 UTC &middot; commits: 75e4482, fc624e4</span></li>
-<li id="shot-p6"><strong>P6</strong> &middot; done. Generate the first reel on the host: a seeded level generator, check.py for every PRD 4.5 check, and four scenes that pass it.<span class="meta">12 Nov 2026, 08:13 UTC &middot; commits: bef0f42, 7e287fe, 7b6414c</span></li>
-<li id="shot-p7"><strong>P7</strong> &middot; done. Paint the first wave of art from code: Lucky&#x27;s jointed cardboard parts, wave-one hazards and props, the studio street set, the editing-desk UI and title cards, with one open-licensed display font.<span class="meta">12 Nov 2026, 09:01 UTC &middot; commits: 9997c03, 29764aa</span></li>
-<li id="shot-p8"><strong>P8</strong> &middot; done. Synthesize the first wave of audio from code: a honky-tonk ragtime piano at 150 BPM (one beat per game tick), win and fail stingers, scissors, projector, buzzer and scrub notes, all through an old projector speaker chain, each stem measured for loudness.<span class="meta">12 Nov 2026, 09:40 UTC &middot; commits: c13f40a, f7fb406</span></li>
+<li id="shot-p6"><strong>P6</strong> &middot; done. Generate the first reel on the host: a seeded level generator, check.py for every PRD 4.5 check, and four scenes that pass it.<span class="meta">12 Nov 2026, 08:13 UTC &middot; commits: bef0f42, 7e287fe, 7b6414c, 6db4d8f</span></li>
+<li id="shot-p7"><strong>P7</strong> &middot; done. Paint the first wave of art from code: Lucky&#x27;s jointed cardboard parts, wave-one hazards and props, the studio street set, the editing-desk UI and title cards, with one open-licensed display font.<span class="meta">12 Nov 2026, 09:01 UTC &middot; commits: 9997c03, 29764aa, 0659f2a</span></li>
+<li id="shot-p8"><strong>P8</strong> &middot; done. Synthesize the first wave of audio from code: a honky-tonk ragtime piano at 150 BPM (one beat per game tick), win and fail stingers, scissors, projector, buzzer and scrub notes, all through an old projector speaker chain, each stem measured for loudness.<span class="meta">12 Nov 2026, 09:40 UTC &middot; commits: c13f40a, f7fb406, 0d387d1, 0bb85fd</span></li>
 <li id="shot-p9"><strong>P9</strong> &middot; done. Lay out the Unreal project as text only: project file, Game and Editor targets, a pure C++ copy of the cut rules, a scene loader, the ogt console commands, automation tests and the editor script that imports the generated art and audio, with the C++ rules checked against the Python solver on the host.<span class="meta">12 Nov 2026, 10:12 UTC &middot; commits: e67f1f2, 6365c43, be95cc2, 0153df9</span></li>
+<li id="shot-p14"><strong>P14</strong> &middot; done. Reels 2 and 3: eight new scenes with a continuity prop, trapdoors, falling objects, a rolling barrel and pie volleys, all passing check.py<span class="meta">12 Nov 2026, 11:17 UTC &middot; commits: 57feffd</span></li>
 </ol></section>
 <section><div class="card"><h2>The cutting room floor</h2></div><p class="intro">Ideas, features and work that were cut, who cut them, and why.</p><ul class="log">
 <li class="cutrow"><strong>Web build and the UE 5.9 MegaJam Preview</strong>. Decision K2: the preview had about a week of development and a shorter QA pass, the hosts said 5.9 is not required, and the biggest risk is not finishing.<span class="meta">cut by the spec</span></li>
