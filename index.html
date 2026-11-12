@@ -49,15 +49,15 @@ footer{color:var(--dim);font-size:.8rem;text-align:center;border-top:1px solid v
 <header class="card"><p class="kicker">A Glass Box dev log for the 2026 Epic AI MegaJam</p><h1>One Good Take: the Director&#x27;s Cut dev log</h1></header>
 <section class="lede"><p>One Good Take is a one-thumb editing puzzle game made in Unreal Engine 5.8 for the theme &quot;Director&#x27;s Cut&quot;.</p><p>Every line of code, every sprite and every sound in it is made by AI agents, working in small slices.</p><p>A server with no graphics card does the thinking; the entrant&#x27;s laptop does the building and testing.</p><p>This page is generated from the project&#x27;s own records after every finished slice. Every number on it is counted, not typed.</p><p>What was cut matters as much as what was kept, so the cutting room floor is part of the show.</p></section>
 <ul class="numbers">
-<li><b>8</b><span>slices finished</span></li>
-<li><b>18</b><span>commits</span></li>
+<li><b>9</b><span>slices finished</span></li>
+<li><b>20</b><span>commits</span></li>
 <li><b>16</b><span>ideas on the cutting room floor</span></li>
-<li><b>2</b><span>calls to the laptop</span><small>answered so far: 0</small></li>
+<li><b>3</b><span>calls to the laptop</span><small>answered so far: 0</small></li>
 <li><b>2</b><span>hours since the cameras rolled</span></li>
 </ul>
 <section><div class="card"><h2>Call sheet</h2></div><table class="callsheet"><tbody>
 <tr><th scope=row>The director</th><td>the human entrant; their notes are quoted here only as written</td><td>0 notes so far</td></tr>
-<tr><th scope=row>The builder</th><td>a fresh AI agent session for each small slice</td><td>8 slices so far</td></tr>
+<tr><th scope=row>The builder</th><td>a fresh AI agent session for each small slice</td><td>9 slices so far</td></tr>
 <tr><th scope=row>The reviewer</th><td>a separate AI agent session that checks each slice</td><td>(TBD-reviewer-count)</td></tr>
 <tr><th scope=row>The stunt double</th><td>automated play-throughs that run every level</td><td>(TBD-autoplay-count)</td></tr>
 </tbody></table></section>
@@ -73,6 +73,7 @@ footer{color:var(--dim);font-size:.8rem;text-align:center;border-top:1px solid v
 <a class="frame" href="#shot-p4"><b>P4</b>done</a>
 <a class="frame" href="#shot-p3c"><b>P3c</b>done</a>
 <a class="frame" href="#shot-p22a"><b>P22a</b>done</a>
+<a class="frame" href="#shot-p5"><b>P5</b>done</a>
 </nav></div>
 <div class="day"><h3>Day 2 &middot; Fri 13 Nov</h3>
 <p class="empty">Not shot yet.</p></div>
@@ -105,6 +106,7 @@ footer{color:var(--dim);font-size:.8rem;text-align:center;border-top:1px solid v
 <li id="shot-p4"><strong>P4</strong> &middot; done. Start collecting the dev log: a recorder for slices, cuts, bloopers and the director&#x27;s own notes, with the first five slices and the spec&#x27;s cuts filled in.<span class="meta">12 Nov 2026, 06:50 UTC &middot; commits: 1b87180, 993538d</span></li>
 <li id="shot-p3c"><strong>P3c</strong> &middot; done. Write down the pre-submission amendment: fourteen review items and the four places where the build may differ from the spec, each with its reason and a way back.<span class="meta">12 Nov 2026, 06:58 UTC &middot; commits: 181a031</span></li>
 <li id="shot-p22a"><strong>P22a</strong> &middot; done. Publish a first-day dev log: a generated static page built only from the project&#x27;s records, exported to its own private repo after every finished slice.<span class="meta">12 Nov 2026, 07:16 UTC &middot; commits: 075d755</span></li>
+<li id="shot-p5"><strong>P5</strong> &middot; done. Write the scene model, the legal-cut rule and a breadth-first solver on the host, with one unit test per cut condition.<span class="meta">12 Nov 2026, 07:41 UTC &middot; commits: 75e4482, fc624e4</span></li>
 </ol></section>
 <section><div class="card"><h2>The cutting room floor</h2></div><p class="intro">Ideas, features and work that were cut, who cut them, and why.</p><ul class="log">
 <li class="cutrow"><strong>Web build and the UE 5.9 MegaJam Preview</strong>. Decision K2: the preview had about a week of development and a shorter QA pass, the hosts said 5.9 is not required, and the biggest risk is not finishing.<span class="meta">cut by the spec</span></li>
