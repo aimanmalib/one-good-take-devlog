@@ -46,7 +46,7 @@ color:var(--dim);white-space:nowrap}
 text-decoration:none;font-size:1.2rem;line-height:1}
 .cuts a span{font:400 .7rem/1 var(--mono)}
 .cuts a:focus-visible,.track a:focus-visible{outline:2px solid var(--gold);outline-offset:1px}
-.slash{position:absolute;top:var(--cutlane);bottom:0;width:2px;margin-left:-1px;background:var(--cut);pointer-events:none;z-index:1}
+.slash{position:absolute;top:calc(var(--cutlane) + var(--lane));bottom:0;width:2px;margin-left:-1px;background:var(--cut);pointer-events:none;z-index:1}
 .track{position:relative;height:var(--track);border-bottom:1px solid var(--frame-edge);
 background-image:repeating-linear-gradient(90deg,var(--frame-edge) 0 6px,transparent 6px 16px);background-size:100% 4px;
 background-repeat:no-repeat;background-position:0 calc(100% - 3px)}
@@ -60,6 +60,10 @@ text-decoration:none;border:1px solid var(--frame-edge);font:400 .78rem/1 var(--
 .t-director .frame{background:var(--note);border-color:var(--gold);font-family:var(--serif);font-style:italic}
 .frame.bad{background:var(--cut-bg);border-color:var(--cut);color:var(--paper)}
 .frame.job{border-color:var(--gold)}
+.vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.mark::before{content:"";display:block;width:.42rem;height:.7rem;margin-top:-.2rem;border:solid var(--gold);border-width:0 2px 2px 0;transform:rotate(45deg)}
+.mark.back::before{width:.8rem;height:.8rem;margin:0;border:0;transform:rotate(45deg);
+background:linear-gradient(var(--paper),var(--paper)) center/100% 2px no-repeat,linear-gradient(var(--paper),var(--paper)) center/2px 100% no-repeat}
 .track .idle{position:absolute;color:var(--dim);font:italic .78rem/1 var(--serif);white-space:nowrap;padding:.5rem 0 0 6.5rem}
 .dayhead{margin-top:2rem}
 .empty{color:var(--dim);font-style:italic;padding:.4rem 0}
@@ -199,44 +203,44 @@ padding:0 0 0 .9rem;background:linear-gradient(var(--gold),var(--gold)) 0 0/2px 
 <li style="left:65.52rem;width:2.6rem"><a class="frame" href="#shot-p22" title="P22: done">P22</a></li>
 </ol></div>
 <div class="track t-reviewer"><h3 class="lane">Reviewer</h3><ol aria-label="Reviewer">
-<li style="left:2.86rem;width:1.35rem"><a class="frame" href="#role-reviewer" title="The reviewer passed this slice">✓</a></li>
-<li style="left:4.89rem;width:1.35rem"><a class="frame" href="#role-reviewer" title="The reviewer passed this slice">✓</a></li>
-<li style="left:6.49rem;width:1.35rem"><a class="frame" href="#role-reviewer" title="The reviewer passed this slice">✓</a></li>
-<li style="left:8.09rem;width:1.35rem"><a class="frame" href="#role-reviewer" title="The reviewer passed this slice">✓</a></li>
-<li style="left:9.95rem;width:1.35rem"><a class="frame" href="#role-reviewer" title="The reviewer passed this slice">✓</a></li>
-<li style="left:15.0rem;width:1.35rem"><a class="frame" href="#role-reviewer" title="The reviewer passed this slice">✓</a></li>
-<li style="left:16.6rem;width:1.35rem"><a class="frame" href="#role-reviewer" title="The reviewer passed this slice">✓</a></li>
-<li style="left:19.63rem;width:1.35rem"><a class="frame" href="#role-reviewer" title="The reviewer passed this slice">✓</a></li>
-<li style="left:23.17rem;width:1.35rem"><a class="frame" href="#role-reviewer" title="The reviewer passed this slice">✓</a></li>
-<li style="left:26.36rem;width:1.35rem"><a class="frame" href="#role-reviewer" title="The reviewer passed this slice">✓</a></li>
-<li style="left:33.37rem;width:1.35rem"><a class="frame" href="#role-reviewer" title="The reviewer passed this slice">✓</a></li>
-<li style="left:38.72rem;width:1.35rem"><a class="frame" href="#role-reviewer" title="The reviewer passed this slice">✓</a></li>
-<li style="left:43.53rem;width:1.35rem"><a class="frame bad" href="#sent-back-2026-11-12t10-22-30z" title="The reviewer sent the slice back">✕</a></li>
-<li style="left:45.28rem;width:1.35rem"><a class="frame bad" href="#sent-back-2026-11-12t10-35-43z" title="The reviewer sent the slice back">✕</a></li>
-<li style="left:47.5rem;width:1.35rem"><a class="frame" href="#role-reviewer" title="The reviewer passed this slice">✓</a></li>
-<li style="left:52.31rem;width:1.35rem"><a class="frame" href="#role-reviewer" title="The reviewer passed this slice">✓</a></li>
-<li style="left:58.83rem;width:1.35rem"><a class="frame" href="#role-reviewer" title="The reviewer passed this slice">✓</a></li>
-<li style="left:61.44rem;width:1.35rem"><a class="frame" href="#role-reviewer" title="The reviewer passed this slice">✓</a></li>
+<li style="left:2.86rem;width:1.35rem"><a class="frame mark ok" href="#role-reviewer" title="The reviewer passed this slice"><span class="vh">passed</span></a></li>
+<li style="left:4.89rem;width:1.35rem"><a class="frame mark ok" href="#role-reviewer" title="The reviewer passed this slice"><span class="vh">passed</span></a></li>
+<li style="left:6.49rem;width:1.35rem"><a class="frame mark ok" href="#role-reviewer" title="The reviewer passed this slice"><span class="vh">passed</span></a></li>
+<li style="left:8.09rem;width:1.35rem"><a class="frame mark ok" href="#role-reviewer" title="The reviewer passed this slice"><span class="vh">passed</span></a></li>
+<li style="left:9.95rem;width:1.35rem"><a class="frame mark ok" href="#role-reviewer" title="The reviewer passed this slice"><span class="vh">passed</span></a></li>
+<li style="left:15.0rem;width:1.35rem"><a class="frame mark ok" href="#role-reviewer" title="The reviewer passed this slice"><span class="vh">passed</span></a></li>
+<li style="left:16.6rem;width:1.35rem"><a class="frame mark ok" href="#role-reviewer" title="The reviewer passed this slice"><span class="vh">passed</span></a></li>
+<li style="left:19.63rem;width:1.35rem"><a class="frame mark ok" href="#role-reviewer" title="The reviewer passed this slice"><span class="vh">passed</span></a></li>
+<li style="left:23.17rem;width:1.35rem"><a class="frame mark ok" href="#role-reviewer" title="The reviewer passed this slice"><span class="vh">passed</span></a></li>
+<li style="left:26.36rem;width:1.35rem"><a class="frame mark ok" href="#role-reviewer" title="The reviewer passed this slice"><span class="vh">passed</span></a></li>
+<li style="left:33.37rem;width:1.35rem"><a class="frame mark ok" href="#role-reviewer" title="The reviewer passed this slice"><span class="vh">passed</span></a></li>
+<li style="left:38.72rem;width:1.35rem"><a class="frame mark ok" href="#role-reviewer" title="The reviewer passed this slice"><span class="vh">passed</span></a></li>
+<li style="left:43.53rem;width:1.35rem"><a class="frame bad mark back" href="#sent-back-2026-11-12t10-22-30z" title="The reviewer sent the slice back"><span class="vh">sent back</span></a></li>
+<li style="left:45.28rem;width:1.35rem"><a class="frame bad mark back" href="#sent-back-2026-11-12t10-35-43z" title="The reviewer sent the slice back"><span class="vh">sent back</span></a></li>
+<li style="left:47.5rem;width:1.35rem"><a class="frame mark ok" href="#role-reviewer" title="The reviewer passed this slice"><span class="vh">passed</span></a></li>
+<li style="left:52.31rem;width:1.35rem"><a class="frame mark ok" href="#role-reviewer" title="The reviewer passed this slice"><span class="vh">passed</span></a></li>
+<li style="left:58.83rem;width:1.35rem"><a class="frame mark ok" href="#role-reviewer" title="The reviewer passed this slice"><span class="vh">passed</span></a></li>
+<li style="left:61.44rem;width:1.35rem"><a class="frame mark ok" href="#role-reviewer" title="The reviewer passed this slice"><span class="vh">passed</span></a></li>
 </ol></div>
 <div class="track t-stunt"><h3 class="lane">Stunt double</h3><ol aria-label="Stunt double">
-<li style="left:2.86rem;width:1.35rem"><a class="frame" href="#role-stunt" title="Automatic checks ran on this slice">✓</a></li>
-<li style="left:4.8rem;width:1.35rem"><a class="frame" href="#role-stunt" title="Automatic checks ran on this slice">✓</a></li>
-<li style="left:6.4rem;width:1.35rem"><a class="frame" href="#role-stunt" title="Automatic checks ran on this slice">✓</a></li>
-<li style="left:8.0rem;width:1.35rem"><a class="frame" href="#role-stunt" title="Automatic checks ran on this slice">✓</a></li>
-<li style="left:9.85rem;width:1.35rem"><a class="frame" href="#role-stunt" title="Automatic checks ran on this slice">✓</a></li>
-<li style="left:14.9rem;width:1.35rem"><a class="frame" href="#role-stunt" title="Automatic checks ran on this slice">✓</a></li>
-<li style="left:16.5rem;width:1.35rem"><a class="frame" href="#role-stunt" title="Automatic checks ran on this slice">✓</a></li>
-<li style="left:19.53rem;width:1.35rem"><a class="frame" href="#role-stunt" title="Automatic checks ran on this slice">✓</a></li>
-<li style="left:23.02rem;width:1.35rem"><a class="frame" href="#role-stunt" title="Automatic checks ran on this slice">✓</a></li>
-<li style="left:26.23rem;width:1.35rem"><a class="frame" href="#role-stunt" title="Automatic checks ran on this slice">✓</a></li>
-<li style="left:33.18rem;width:1.35rem"><a class="frame" href="#role-stunt" title="Automatic checks ran on this slice">✓</a></li>
-<li style="left:38.56rem;width:1.35rem"><a class="frame" href="#role-stunt" title="Automatic checks ran on this slice">✓</a></li>
-<li style="left:42.77rem;width:1.35rem"><a class="frame" href="#role-stunt" title="Automatic checks ran on this slice">✓</a></li>
-<li style="left:44.45rem;width:1.35rem"><a class="frame" href="#role-stunt" title="Automatic checks ran on this slice">✓</a></li>
-<li style="left:47.3rem;width:1.35rem"><a class="frame" href="#role-stunt" title="Automatic checks ran on this slice">✓</a></li>
-<li style="left:51.98rem;width:1.35rem"><a class="frame" href="#role-stunt" title="Automatic checks ran on this slice">✓</a></li>
-<li style="left:58.31rem;width:1.35rem"><a class="frame" href="#role-stunt" title="Automatic checks ran on this slice">✓</a></li>
-<li style="left:60.88rem;width:1.35rem"><a class="frame" href="#role-stunt" title="Automatic checks ran on this slice">✓</a></li>
+<li style="left:2.86rem;width:1.35rem"><a class="frame mark ok" href="#role-stunt" title="Automatic checks ran on this slice"><span class="vh">passed</span></a></li>
+<li style="left:4.8rem;width:1.35rem"><a class="frame mark ok" href="#role-stunt" title="Automatic checks ran on this slice"><span class="vh">passed</span></a></li>
+<li style="left:6.4rem;width:1.35rem"><a class="frame mark ok" href="#role-stunt" title="Automatic checks ran on this slice"><span class="vh">passed</span></a></li>
+<li style="left:8.0rem;width:1.35rem"><a class="frame mark ok" href="#role-stunt" title="Automatic checks ran on this slice"><span class="vh">passed</span></a></li>
+<li style="left:9.85rem;width:1.35rem"><a class="frame mark ok" href="#role-stunt" title="Automatic checks ran on this slice"><span class="vh">passed</span></a></li>
+<li style="left:14.9rem;width:1.35rem"><a class="frame mark ok" href="#role-stunt" title="Automatic checks ran on this slice"><span class="vh">passed</span></a></li>
+<li style="left:16.5rem;width:1.35rem"><a class="frame mark ok" href="#role-stunt" title="Automatic checks ran on this slice"><span class="vh">passed</span></a></li>
+<li style="left:19.53rem;width:1.35rem"><a class="frame mark ok" href="#role-stunt" title="Automatic checks ran on this slice"><span class="vh">passed</span></a></li>
+<li style="left:23.02rem;width:1.35rem"><a class="frame mark ok" href="#role-stunt" title="Automatic checks ran on this slice"><span class="vh">passed</span></a></li>
+<li style="left:26.23rem;width:1.35rem"><a class="frame mark ok" href="#role-stunt" title="Automatic checks ran on this slice"><span class="vh">passed</span></a></li>
+<li style="left:33.18rem;width:1.35rem"><a class="frame mark ok" href="#role-stunt" title="Automatic checks ran on this slice"><span class="vh">passed</span></a></li>
+<li style="left:38.56rem;width:1.35rem"><a class="frame mark ok" href="#role-stunt" title="Automatic checks ran on this slice"><span class="vh">passed</span></a></li>
+<li style="left:42.77rem;width:1.35rem"><a class="frame mark ok" href="#role-stunt" title="Automatic checks ran on this slice"><span class="vh">passed</span></a></li>
+<li style="left:44.45rem;width:1.35rem"><a class="frame mark ok" href="#role-stunt" title="Automatic checks ran on this slice"><span class="vh">passed</span></a></li>
+<li style="left:47.3rem;width:1.35rem"><a class="frame mark ok" href="#role-stunt" title="Automatic checks ran on this slice"><span class="vh">passed</span></a></li>
+<li style="left:51.98rem;width:1.35rem"><a class="frame mark ok" href="#role-stunt" title="Automatic checks ran on this slice"><span class="vh">passed</span></a></li>
+<li style="left:58.31rem;width:1.35rem"><a class="frame mark ok" href="#role-stunt" title="Automatic checks ran on this slice"><span class="vh">passed</span></a></li>
+<li style="left:60.88rem;width:1.35rem"><a class="frame mark ok" href="#role-stunt" title="Automatic checks ran on this slice"><span class="vh">passed</span></a></li>
 </ol></div>
 <div class="slash" style="left:2.27rem" aria-hidden="true"></div>
 <div class="slash" style="left:56.82rem" aria-hidden="true"></div>
@@ -255,7 +259,7 @@ padding:0 0 0 .9rem;background:linear-gradient(var(--gold),var(--gold)) 0 0/2px 
 <ol class="flow" aria-label="Server to Tunnel to Laptop service to Unreal 5.8"><li><b>Server</b><small>agents, no GPU</small></li><li><span class="wire">request</span><b>Tunnel</b><small>opened by laptop</small></li><li><span class="wire">token</span><b>Laptop service</b><small>fixed commands</small></li><li class=hot><span class="wire">starts</span><b>Unreal 5.8</b><small>build, cook, test</small></li></ol>
 <h3>Every command the laptop service accepts</h3><table class="commands"><tbody>
 <tr><th scope=row><code>/status</code></th><td>Is the service up, is a job running, how long has the laptop been idle.</td></tr>
-<tr><th scope=row><code>/doktor</code></th><td>Report the Unreal, Visual Studio, disk and power setup.</td></tr>
+<tr><th scope=row><code>/doktor</code></th><td>Report the Unreal, Visual Studio, disk space and sleep settings.</td></tr>
 <tr><th scope=row><code>/file</code></th><td>Read one file inside the project folder (size-limited).</td></tr>
 <tr><th scope=row><code>/find</code></th><td>List files inside the project folder by pattern.</td></tr>
 <tr><th scope=row><code>/grep</code></th><td>Search engine and project headers, so code is written against the real API.</td></tr>
